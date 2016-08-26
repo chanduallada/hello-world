@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CENSUS FORM</title>
+        <link href="css/jquerymobile132min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/chinmayathememin.css" rel="stylesheet" type="text/css"/>
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
+        <link href="css/home.css" rel="stylesheet" type="text/css"/>
+        <link href="css/jquery-ui.css"  rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="js/jquery171min.js"></script> 
+        <script src="js/jquery-ui.js"></script>
+        <script src="css/jquerymobile132min.js" type="text/javascript"></script>
+        <script src="js/jquerycookie.js" type="text/javascript"></script>
+        <!-- Modernizr for checking the HTML5 capability of the running browser-->
+        <script src="js/modernizrcustom12637.js"></script>
+        <script type="text/javascript" src="scripts/census.js"  ></script>
+        <style>
+            .clear{clear:both;}
+        </style>
+    </head>
+    <body>
+        <div data-role="page" id="page" data-theme="b">
+            <div data-role="header" data-position="fixed" data-theme="b" style="position: fixed"> 
+                <div class="home_main">
+				    <div class="leftMenuIcon">
+					    <a href="#leftpanel3" data-position="left">
+					    	<img src="images/iconlist.png"  alt="Home" style='margin-bottom: 3px;'>
+					    </a>	
+					</div>
+			        <div class='headerTitle'>CENSUS FORM</div>
+				</div>
+              </div>
+            <div  id="content" data-theme="b" align="center" style="margin-top: 10px">  </div>
+                <div class="video_list">
+                	<form id="censusForm">
+                    	<div class="regi_main">
+                        	<div class="form-iheading"><div class='subHeading'>HEAD OF THE FAMILY</div></div>
+	                        <div class="login_in2">
+								<div class="upload">
+									<img id="uploadHeadPreview" src="images/profile/logo.png" alt="profile" height=100 width=100><br>
+									<p id='uploadHeadPhoto'>Upload Photo</p>
+								</div>
+	                        </div>
+	                        <div class="login_in2">
+		                        <select id="headType" name="headTitle" data-native-menu="false" required>
+								    <option value="">Select</option>
+			                        <option value="Mr">Mr.</option>
+			                        <option value="Mrs">Mrs.</option>
+			                        <option value="Miss">Miss.</option>
+								</select>
+	                        </div>
+							<div class="login_in2 reg" id='headTitle'><label >This field is required.</label></div>
+	                        <div class="clear"> </div>
+							
+	                        <div class="login_in2"><input name="firstName" type="text" placeholder='First Name*' class='register' required> </div>
+	                        <div class="login_in2 reg" id='firstName'><label >This field is required.</label></div>
+	                        <div class="clear"> </div>
+	                        
+	                        <div class="login_in2"><input name="surname" type="text" placeholder='Surname*' class='register' required> </div>
+	                        <div class="login_in2 reg" id='surname' ><label >This field is required.</label></div>
+	                        <div class="clear"> </div>
+	                        
+							<div class="login_in2"><input type="text" name="dob" placeholder='Date of Birth*' class='register' required></div>
+							<div class="login_in2 reg" id='dob'><label >This field is required.</label></div>
+							<div class="clear"> </div>
+							
+							<div class="login_in2">
+								<select data-native-menu="false" aria-invalid="false" aria-required="true" name="gothram"><option value="Amppulli">Amppulli</option><option value="Anuganti">Anuganti</option><option value="Aratla">Aratla</option><option value="Ayodhya">Ayodhya</option><option value="Bilishiki">Bilishiki</option><option value="Chelimela">Chelimela</option><option value="Cherukula">Cherukula</option><option value="Cherukunoolla">Cherukunoolla</option><option value="Daasunoolla">Daasunoolla</option><option value="Debbiroola">Debbiroola</option><option value="Devanoolla">Devanoolla</option><option value="Dhanyavolu">Dhanyavolu</option><option value="Goodaru">Goodaru</option><option value="Goode">Goode</option><option value="Gundekarithula">Gundekarithula</option><option value="Gundeti">Gundeti</option><option value="Inugala">Inugala</option><option value="Jammuluru">Jammuluru</option><option value="Jayapatla">Jayapatla</option><option value="Kadhupunoolla">Kadhupunoolla</option><option value="Kancherla">Kancherla</option><option value="Komaruvelli">Komaruvelli</option><option value="Koppunoolla">Koppunoolla</option><option value="Koruganti">Koruganti</option><option value="Kundipalle">Kundipalle</option><option value="Maadhavarekula">Maadhavarekula</option><option value="Maarutla">Maarutla</option><option value="Madhupala">Madhupala</option><option value="Malicheppi">Malicheppi</option><option value="Mallacherla">Mallacherla</option><option value="Mallela">Mallela</option><option value="Mangipudi">Mangipudi</option><option value="Marupallu">Marupallu</option><option value="Matnoollu">Matnoollu</option><option value="Metakura">Metakura</option><option value="Methe">Methe</option><option value="Muddunoolla">Muddunoolla</option><option value="Nannagiri">Nannagiri</option><option value="Ningivelli">Ningivelli</option><option value="Paaluru">Paaluru</option><option value="Paanepalli">Paanepalli</option><option value="Paayeti">Paayeti</option><option value="Paidimukkala">Paidimukkala</option><option value="Paidipala">Paidipala</option><option value="Palkunoori">Palkunoori</option><option value="Pallechella">Pallechella</option><option value="Pandurajula">Pandurajula</option><option value="Pasupunoolla">Pasupunoolla</option><option value="Patnoollu">Patnoollu</option><option value="Pempala">Pempala</option><option value="Penugondala">Penugondala</option><option value="Pernankula">Pernankula</option><option value="Perunoolla">Perunoolla</option><option value="Ponugoti">Ponugoti</option><option value="Poorvadi">Poorvadi</option><option value="PuliYaala">PuliYaala</option><option value="Raaloori">Raaloori</option><option value="Ravipalla">Ravipalla</option><option value="Recharla">Recharla</option><option value="Repala">Repala</option><option value="Samantharao">Samantharao</option><option value="Sannagiri">Sannagiri</option><option value="Saramaala">Saramaala</option><option value="Shelavori">Shelavori</option><option value="Shenagapudi">Shenagapudi</option><option value="Sirimalle">Sirimalle</option><option value="Srimalle">Srimalle</option></select>
+							</div>
+							
+							<div class="login_in2"><input name="sunOf" type="text"  placeholder='S/o,W/o,D/o *' class='register'> </div>
+							<div class="login_in2 reg" id='sunOf' ><label >This field is required.</label></div>
+							<div class="clear"> </div>
+							
+							<div class="login_in2"><input name="education" type="text" placeholder='Education' class='register'> </div>
+							<div class="clear"> </div>
+                        
+							<div class="login_in2">
+								<div class="ui-grid-b ui-controlgroup-controls" >
+									<legend> Marital Status* </legend>
+									<div class="ui-block-a" style='width : 120px;'>
+									  <input name="martialStatus" id="married" value="Married" type="radio" data-mini="true">
+									  <label for="married">Married</label>
+									</div>
+									<div class="ui-block-b" style='width : 150px;'>
+									  <input name="martialStatus" id="unmarried" value="Unmarried" type="radio" data-mini="true"  checked=true>
+									  <label for="unmarried">Unmarried</label>
+									</div>
+								 </div>
+							</div>
+							<div class="login_in2 reg" id='martialStatus'><label >This field is required.</label></div>
+							<div class="clear"> </div>
+							
+							<div class="login_in2"><input name="mobileNo" type="text" maxlength="15" pattern="[0-9]" oninvalid="setCustomValidity('Plz enter on Alphabets ')" placeholder='Mobile No*' class='register'> </div>
+							<div class="login_in2 reg" id='mobileNo' ><label >This field is required.</label></div>
+							<div class="clear"> </div>
+							
+							<div class="login_in2"><input name="email" type="text" placeholder='Email Id *' class='register'> </div>
+							<div class="login_in2 reg" id='email'><label >This field is required.</label></div>
+							<div class="clear"> </div>
+							
+							<div class="login_in2"><input type="text" name="aadharNo" placeholder='Aadhar No.*' class='register'></div>
+							
+							<div class="login_in2 reg" id='aadharNo' ><label >This field is required.</label></div>
+							<div class="login_in2"><input name="aivaLm" type="text"  placeholder='AIVA Lm#' class='register'> </div>
+							<div class="clear"> </div>
+							
+							<div class="login_in2">
+								<select id="occupationSelector" required data-native-menu="false" name="occupation" aria-invalid="false"><option value="">Occupation*</option><option value="Govt Employee">Govt Employee</option><option value="Private Employee">Private Employee</option><option value="Business">Business</option><option value="Agriculture">Agriculture</option><option value="Retired">Retired</option></select>
+							</div>
+							<div class="login_in2 reg" id='occupation' ><label >This field is required.</label></div>
+							<div class="clear"> </div>
+                        
+							<div class="login_in2">
+								<select  data-native-menu="false"  name="annualIncome"> <option>Annual Income</option><option value="Below Rs,60,000/-">Below Rs,60,000/-</option><option value="60,000-1,20,000">Rs.60,000/- to 1,20,000/-</option><option value="Above Rs. 1,20,000">Above Rs. 1,20,000</option></select>
+							</div>
+							<div class="login_in2 reg" id='annualIncome' ><label >This field is required.</label></div>
+							<div class="clear"> </div>
+							
+							<div class="login_in2">
+								<select  data-native-menu="false"  name="agricultureLand"><option>Agriculture Land</option><option value="Nill">Nill</option><option value="0-2 Acres">0-2 Acres</option><option value="2-4 Acres">2-4 Acres</option><option value="Above 4 Acres">Above 4 acres</option></select>
+							</div>
+                        
+							<div class="login_in2">
+								<div class="ui-grid-b ui-controlgroup-controls" >
+									<legend>Own House</legend>
+									<div class="ui-block-a" style='width : 80px;'>
+									  <input name="ownHouse" id="ownhourseYes" value="Yes" type="radio" data-mini="true" checked=true>
+									  <label for="ownhourseYes">Yes</label>
+									</div>
+									<div class="ui-block-b" style='width : 80px;'>
+									  <input name="ownHouse" id="ownhourseNo" value="No" type="radio" data-mini="true" >
+									  <label for="ownhourseNo">No</label>
+									</div>
+								 </div>
+							</div>						
+							<div class="clear"> </div>
+							
+							<div id="childrenDiv" style="display : none;">
+								<div class="login_in2">
+									<div class="ui-grid-b ui-controlgroup-controls" >
+										<legend>Children *</legend>
+										<div class="ui-block-a" style='width : 80px;'>
+										  <input name="children" id="childrenYes" value="Yes" type="radio" data-mini="true" >
+										  <label for="childrenYes">Yes</label>
+										</div>
+										<div class="ui-block-b" style='width : 80px;'>
+										  <input name="children" id="childrenNo" value="No" type="radio" data-mini="true" checked=true>
+										  <label for="childrenNo">No</label>
+										</div>
+									 </div>
+								</div>
+								<div class="login_in2 reg" id='children' ><label >This field is required.</label></div>
+							</div>
+							<div class="clear"> </div>
+							<div div="occupationSection">
+								<div id="govtEmployee" class="occupation" style="display : none;">
+									<div class="form-iheading"><div class='subHeading'>Govt Employee</div></div>
+									<div class="login_in2"><input name="govtDep" type="text"  placeholder='Govt Department *' class='register'> </div>
+									<div class="login_in2 reg" id='govtDep' ><label >This field is required.</label></div>
+									<div class="clear"> </div>
+									<div class="login_in2"><input name="designation" type="text"  placeholder='Designation*' class='register'> </div>
+									<div class="login_in2 reg" id='designation' ><label >This field is required.</label></div>
+									<div class="clear"> </div>
+									<div class="login_in2"><input name="phone" type="text"  placeholder='Phone*' class='register'> </div>
+									<div class="login_in2 reg" id='phone' ><label >This field is required.</label></div>
+									<div class="clear"> </div>
+									<div class="login_in2"><input name="location" type="text"  placeholder='Location*' class='register'> </div>
+									<div class="login_in2 reg" id='location' ><label >This field is required.</label></div>
+									<div class="clear"> </div>
+								</div>
+							
+								<div id="privateEmployee" class="occupation" style="display : none;">
+									<div class="form-iheading"><div class='subHeading'>Private Employee</div></div>
+									<div class="login_in2"><input name="firmName" type="text"  placeholder='Firm Name *' class='register'> </div>
+									<div class="login_in2 reg" id='firmName' ><label >This field is required.</label></div>
+									<div class="clear"> </div>
+									<div class="login_in2"><input name="privateDesignation" type="text"  placeholder='Designation*' class='register'> </div>
+									<div class="login_in2 reg" id='privateDesignation' ><label >This field is required.</label></div>
+									<div class="clear"> </div>
+									<div class="login_in2"><input name="phone" type="text"  placeholder='Phone*' class='register'> </div>
+									<div class="login_in2 reg" id='privatePhone' ><label >This field is required.</label></div>
+									<div class="clear"> </div>
+									<div class="login_in2"><input name="location" type="text"  placeholder='Location*' class='register'> </div>
+									<div class="login_in2 reg" id='privateLocation' ><label >This field is required.</label></div>
+									<div class="clear"> </div>
+								</div>
+								<div id="business" class="occupation"  style="display : none;">
+									<div class="form-iheading"><div class='subHeading'>Business</div></div>
+									<div class="login_in2"><input name="businessType" type="text"  placeholder='Business Type*' class='register'> </div>
+									<div class="login_in2 reg" id='businessType' ><label >This field is required.</label></div>
+									<div class="clear"> </div>
+									<div class="login_in2"><input name="businessName" type="text"  placeholder='Business Name *' class='register'> </div>
+									<div class="login_in2 reg" id='businessName' ><label >This field is required.</label></div>
+									<div class="clear"> </div>
+									<div class="login_in2"><input name="businesPhone" type="text"  placeholder='Phone*' class='register'> </div>
+									<div class="login_in2 reg" id='businesPhone' ><label >This field is required.</label></div>
+									<div class="clear"> </div>
+									<div class="login_in2"><input name="businessLocation" type="text"  placeholder='Location*' class='register'> </div>
+									<div class="login_in2 reg" id='businessLocation' ><label >This field is required.</label></div>
+									<div class="clear"> </div>
+								</div>
+							</div>
+					    
+							<div style="display : none" id="spouseDetails">
+								<div class="form-iheading"><div class='subHeading'>Spouse Details</div></div>	                        
+								<div class="login_in2">
+									<div class="upload">
+										<img id="uploadSpousePreview" src='images/profile/profile.jpg' height=100 width=100><br>
+										<p id='uploadSpousePhoto'> Upload Photo </p>
+									</div>
+								</div>
+								<div class="login_in2 reg" id='do' ><label >Please upload photo.</label></div>
+								<div class="clear"> </div>
+                        
+	                        <div class="login_in2"><input name="spouceName" type="text" placeholder='Name*' class='register'> </div>
+	                        <div class="login_in2 reg" id='spouceName' ><label >This field is required.</label></div>
+	                        <div class="clear"> </div>
+	                        
+	                        <div class="login_in2"><input name="daughterOf" type="text" placeholder='D/o*' class='register'> </div>
+	                        <div class="login_in2 reg" id='daughterOf' ><label >This field is required.</label></div>
+	                        <div class="clear"> </div>
+	                        
+	                        <div class="login_in2"><input type="text" name="spouceDateOfBirth"  placeholder='Date of Birth' class='register'></div>
+	                        <div class="login_in2 reg" id='spouceDateOfBirth' ><label >This field is required.</label></div>
+	                        <div class="clear"> </div>
+							
+	                        <div class="login_in2"><input name="spousAaivaLm" type="text" placeholder='AIVA Lm#' class='register'> </div>
+	                        <div class="login_in2 reg" id='spousAaivaLm' ><label >This field is required.</label></div>
+	                        <div class="clear"> </div>
+	                        
+	                        <div class="login_in2"><input name="spouseMobile" type="text" placeholder='Mobile No*' class='register'></div>
+	                       	<div class="login_in2 reg" id='spouseMobile' ><label >This field is required.</label></div>
+	                        <div class="clear"> </div>
+							
+	                        <div class="login_in2">
+	                        	<input name="spouseEmail" type="text" placeholder='Email Id*' class='register'>
+	                        </div>
+	                        
+	                        <div class="login_in2"><input name="spouseAadhar" type="text" placeholder='Aadhar No*' class='register'></div>
+	                       	<div class="login_in2 reg" id='spouseAadhar' ><label >This field is required.</label></div><div class="clear"> </div>
+							
+	                        <div class="login_in2"><input name="spouseEducation" type="text" placeholder='Education' class='register'></div>
+							
+	                        <div class="login_in2">
+	                        	<select  data-native-menu="false"  name="spouseAgricultureLand"><option>Agriculture Land</option><option value="Nill">Nill</option><option value="0-2 Acres">0-2 Acres</option><option value="2-4 Acres">2-4 Acres</option><option value="Above 4 Acres">Above 4 acres</option></select>
+	                        </div>
+	                        <div class="login_in2">
+	                        	<select required id="spouseOccupationSelector" data-native-menu="false" name="spouseOccupation"   aria-invalid="false"><option value="">Occupation*</option><option value="Govt Employee">Govt Employee</option><option value="Private Employee">Private Employee</option><option value="Business">Business</option><option value="House Wife">House Wife</option><option value="Retired">Retired</option></select>
+							</div>
+							<div class="login_in2 reg" id='spouseOccupation' ><label >This field is required.</label></div>
+	                        <div class="clear"> </div>
+	                        
+	                        <div class="login_in2">
+	                        	<select   data-native-menu="false"  name="spouseAnnualIncome"> <option>Annual Income</option><option value="Below Rs,60,000/-">Below Rs,60,000/-</option><option value="60,000-1,20,000">Rs.60,000/- to 1,20,000/-</option><option value="Above Rs. 1,20,000">Above Rs. 1,20,000</option></select>
+	                        </div>
+                        </div>
+                        
+						<div id="spouseOccupationSection">
+							<div id="spouseGovtEmployee" class="spouseOccupation" style="display:none;">
+								<div class="form-iheading"><div class='subHeading'>Govt Employee</div></div>
+								<div class="login_in2"><input name="spouseGovtDep" type="text"  placeholder='Govt Department *' class='register'> </div>
+								<div class="login_in2 reg" id='spouseGovtDep' ><label >This field is required.</label></div>
+								<div class="clear"> </div>
+								<div class="login_in2"><input name="spouseGovtDesignation" type="text"  placeholder='Designation*' class='register'> </div>
+								<div class="login_in2 reg" id='spouseGovtDesignation' ><label >This field is required.</label></div>
+								<div class="clear"> </div>
+								<div class="login_in2"><input name="spouseGovtPhone" type="text"  placeholder='Phone*' class='register'> </div>
+								<div class="login_in2 reg" id='spouseGovtPhone' ><label >This field is required.</label></div>
+								<div class="clear"> </div>
+								<div class="login_in2"><input name="spouseGovtLocation" type="text"  placeholder='Location*' class='register'> </div>
+								<div class="login_in2 reg" id='spouseGovtLocation' ><label >This field is required.</label></div>
+								<div class="clear"> </div>
+							</div>
+							
+							<div id="spousePrivateEmployee" class="spouseOccupation" style="display:none;">
+								<div class="form-iheading"><div class='subHeading'>Private Employee</div></div>
+								<div class="login_in2"><input name="spousePrivateFirmName" type="text"  placeholder='Firm Name *' class='register'> </div>
+								<div class="login_in2 reg" id='spousePrivateFirmName' ><label >This field is required.</label></div>
+								<div class="clear"> </div>
+								<div class="login_in2"><input name="spousePrivateDesignation" type="text"  placeholder='Designation*' class='register'> </div>
+								<div class="login_in2 reg" id='spousePrivateDesignation' ><label >This field is required.</label></div>
+								<div class="clear"> </div>
+								<div class="login_in2"><input name="spousePrivatePhone" type="text"  placeholder='Phone*' class='register'> </div>
+								<div class="login_in2 reg" id='spousePrivatePhone' ><label >This field is required.</label></div>
+								<div class="clear"> </div>
+								<div class="login_in2"><input name="spousePrivateLocation" type="text"  placeholder='Location*' class='register'> </div>
+								<div class="login_in2 reg" id='spousePrivateLocation' ><label >This field is required.</label></div>
+								<div class="clear"> </div>
+							</div>
+							<div id="spouseBusiness" class="spouseOccupation" style="display:none;">
+								<div class="form-iheading"><div class='subHeading'>Business</div></div>
+								<div class="login_in2"><input name="spouseBusinessType" type="text"  placeholder='Business Type*' class='register'> </div>
+								<div class="login_in2 reg" id='spouseBusinessType' ><label >This field is required.</label></div>
+								<div class="clear"> </div>
+								<div class="login_in2"><input name="spouseBusinessName" type="text"  placeholder='Business Name *' class='register'> </div>
+								<div class="login_in2 reg" id='spouseBusinessName' ><label >This field is required.</label></div>
+								<div class="clear"> </div>
+								<div class="login_in2"><input name="spouseBusinessPhone" type="text"  placeholder='Phone*' class='register'> </div>
+								<div class="login_in2 reg" id='spouseBusinessPhone' ><label >This field is required.</label></div>
+								<div class="clear"> </div>
+								<div class="login_in2"><input name="spouseBusinessLocation" type="text"  placeholder='Location*' class='register'> </div>
+								<div class="login_in2 reg" id='spouseBusinessLocation' ><label >This field is required.</label></div>
+								<div class="clear"> </div>
+							</div>
+						</div>
+                        
+                        <div style="display:none;" id="childrenTableDiv">
+	                        <div class="form-iheading"><div class='subHeading'>Children</div></div>	                        
+	                        <div>
+		                        <div class="login_in2" style="overflow:auto;">
+		                        	<table id="childrenTable">
+		                        		<tr>
+			                        		<th>S.No.</th>
+											<th>Name</th>
+											<th>DOB</th>
+											<th>M/F</th>
+											<th>Education</th>
+											<th>Place</th>
+											<th>Marital Status</th>
+											<th>Aadhar No.</th>
+											<th>Mobile</th>
+											<th>Email-ID</th>
+										</tr>
+										<tr>
+											<td ><input name="serial" type="text" disabled=disable value="1" class='register serialNumber'></td>
+											<td><input name="name" type="text" class='register' style='width:100px;'></td>
+											<td>
+					                        	<input type="text" id='child1DOB' name="child1DOB" class='register' style='width:80px;'>
+					                        </td>
+					                        <td>
+					                        	<select name="child1Gender" data-native-menu="false" style='width:100px;'>
+												    <option value=""></option>
+							                        <option value="Male">Male</option>
+							                        <option value="Female">Female</option>
+												</select>
+					                        </td>
+					                        <td><input name="education" type="text" class='register' style='width:100px;'></td>
+					                        <td><input name="place" type="text" class='register' style='width:100px;'></td>
+					                        <td style='width:240px;'>
+					                        	<select name="childMaritalStatus" data-native-menu="false" >
+												    <option value=""></option>
+							                        <option value="Married">Married</option>
+							                        <option value="Unmarried">Unmarried</option>
+												</select>
+					                        </td>
+											<td><input name="aadhar" type="text"  class='register' style='width:100px;'></td>
+											<td><input name="mobile" type="text" class='register' style='width:100px;'></td>
+											<td><input name="email" type="text" class='register' style='width:100px;'></td>
+										</tr>
+										<tr id="children2" class="childrenTableRowClass" style="display:none;">
+											<td ><input name="serial" type="text" disabled=disable value="2" class='register serialNumber' ></td>
+											<td><input name="name" type="text" class='register' style='width:100px;'></td>
+											<td>
+					                        	<input type="text" id='child2DOB' name="child2DOB" class='register' style='width:80px;'>
+					                        </td>
+					                        <td>
+					                        	<select name="child1Gender" data-native-menu="false" style='width:100px;'>
+												    <option value=""></option>
+							                        <option value="Male">Male</option>
+							                        <option value="Female">Female</option>
+												</select>
+					                        </td>
+					                        <td><input name="education" type="text" class='register' style='width:100px;'></td>
+					                        <td><input name="place" type="text" class='register' style='width:100px;'></td>
+					                        <td style='width:240px;'>
+					                        	<select name="childMaritalStatus" data-native-menu="false" >
+												    <option value=""></option>
+							                        <option value="Married">Married</option>
+							                        <option value="Unmarried">Unmarried</option>
+												</select>
+					                        </td>
+											<td><input name="aadhar" type="text"  class='register' style='width:100px;'></td>
+											<td><input name="mobile" type="text" class='register' style='width:100px;'></td>
+											<td><input name="email" type="text" class='register' style='width:100px;'></td>
+										</tr>
+										<tr id="children3" class="childrenTableRowClass" style="display:none;">
+											<td ><input name="serial" type="text" disabled=disable value="3" class='register serialNumber' ></td>
+											<td><input name="name" type="text" class='register' style='width:100px;'></td>
+											<td>
+					                        	<input type="text" id='child3DOB' name="child3DOB" class='register' style='width:80px;'>
+					                        </td>
+					                        <td>
+					                        	<select name="child1Gender" data-native-menu="false" style='width:100px;'>
+												    <option value=""></option>
+							                        <option value="Male">Male</option>
+							                        <option value="Female">Female</option>
+												</select>
+					                        </td>
+					                        <td><input name="education" type="text" class='register' style='width:100px;'></td>
+					                        <td><input name="place" type="text" class='register' style='width:100px;'></td>
+					                        <td style='width:240px;'>
+					                        	<select name="childMaritalStatus" data-native-menu="false" >
+												    <option value=""></option>
+							                        <option value="Married">Married</option>
+							                        <option value="Unmarried">Unmarried</option>
+												</select>
+					                        </td>
+											<td><input name="aadhar" type="text"  class='register' style='width:100px;'></td>
+											<td><input name="mobile" type="text" class='register' style='width:100px;'></td>
+											<td><input name="email" type="text" class='register' style='width:100px;'></td>
+										</tr>
+										<tr id="children4" class="childrenTableRowClass" style="display:none;">
+											<td><input name="serial" type="text" disabled=disable value="4" class='register serialNumber' ></td>
+											<td><input name="name" type="text" class='register' style='width:100px;'></td>
+											<td>
+					                        	<input type="text" id='child4DOB' name="child4DOB" class='register' style='width:80px;'>
+					                        </td>
+					                        <td>
+					                        	<select name="child1Gender" data-native-menu="false" style='width:100px;'>
+												    <option value=""></option>
+							                        <option value="Male">Male</option>
+							                        <option value="Female">Female</option>
+												</select>
+					                        </td>
+					                        <td><input name="education" type="text" class='register' style='width:100px;'></td>
+					                        <td><input name="place" type="text" class='register' style='width:100px;'></td>
+					                        <td style='width:240px;'>
+					                        	<select name="childMaritalStatus" data-native-menu="false" >
+												    <option value=""></option>
+							                        <option value="Married">Married</option>
+							                        <option value="Unmarried">Unmarried</option>
+												</select>
+					                        </td>
+											<td><input name="aadhar" type="text"  class='register' style='width:100px;'></td>
+											<td><input name="mobile" type="text" class='register' style='width:100px;'></td>
+											<td><input name="email" type="text" class='register' style='width:100px;'></td>
+										</tr>
+										<tr id="children5" class="childrenTableRowClass" style="display:none;">
+											<td><input name="serial" type="text" disabled=disable value="4" class='register serialNumber' ></td>
+											<td><input name="name" type="text" class='register' style='width:100px;'></td>
+											<td>
+					                        	<input type="text" id='child5DOB' name="child5DOB" class='register' style='width:80px;'>
+					                        </td>
+					                        <td>
+					                        	<select name="child1Gender" data-native-menu="false" style='width:100px;'>
+												    <option value=""></option>
+							                        <option value="Male">Male</option>
+							                        <option value="Female">Female</option>
+												</select>
+					                        </td>
+					                        <td><input name="education" type="text" class='register' style='width:100px;'></td>
+					                        <td><input name="place" type="text" class='register' style='width:100px;'></td>
+					                        <td style='width:240px;'>
+					                        	<select name="childMaritalStatus" data-native-menu="false" >
+												    <option value=""></option>
+							                        <option value="Married">Married</option>
+							                        <option value="Unmarried">Unmarried</option>
+												</select>
+					                        </td>
+											<td><input name="aadhar" type="text"  class='register' style='width:100px;'></td>
+											<td><input name="mobile" type="text" class='register' style='width:100px;'></td>
+											<td><input name="email" type="text" class='register' style='width:100px;'></td>
+										</tr>
+		                        	</table>
+		                        </div>
+		                        <div align='center'><a href="#" data-role="button"  data-inline="true" data-theme="b" style="width: 150px;background:red; color: #FFFFFF" class='regi_btn' id="addMore">Add More</a></div>           
+	                        </div>
+                        </div>
+                        
+                       	<div class="form-iheading"><div class='subHeading'>Address</div></div>
+                        <div class="login_in2" style='text-align:center; font-weight:bold;'><div> Communication Address </div></div>
+                        <div class="login_in2"><input name="communicationAddressDivision" type="text"  placeholder='H.No:*' class='register'> </div>
+                        <div class="login_in2 reg" id='communicationAddressDivision' ><label >This field is required.</label></div>
+                        <div class="clear"> </div>
+                        <div class="login_in2"><input name="communicationAddressBuilding" type="text"  placeholder='Building/Apartment*' class='register'> </div>
+                        <div class="login_in2 reg" id='communicationAddressBuilding' ><label >This field is required.</label></div>
+                        <div class="clear"> </div>
+                        
+                        <div class="login_in2"><input name="communicationAddressArea" type="text"  placeholder='Area/Locality *' class='register'> </div>
+                        <div class="login_in2 reg" id='communicationAddressArea' ><label >This field is required.</label></div>
+                        <div class="clear"> </div>
+                        <div class="login_in2"><input name="communicationAddressVillage" type="text"  placeholder='Village/Town/City*' class='register'> </div>
+                        <div class="login_in2 reg" id='communicationAddressVillage' ><label >This field is required.</label></div>
+                        <div class="clear"> </div>
+                        
+                        <div class="login_in2"><input name="communicationAddressDistrict" type="text"  placeholder='District*' class='register'> </div>
+                        <div class="login_in2 reg" id='communicationAddressDistrict' ><label >This field is required.</label></div>
+                        <div class="clear"> </div>
+                        <div class="login_in2"><input name="communicationAddressState" type="text"  placeholder='State *' class='register'> </div>
+                        <div class="login_in2 reg" id='communicationAddressState' ><label >This field is required.</label></div>
+                        <div class="clear"> </div>
+                        
+                        <div class="login_in2"><input name="communicationAddressPincode" type="text"  placeholder='Pinode*' class='register'> </div>
+                        <div class="login_in2 reg" id='communicationAddressPincode' ><label >This field is required.</label></div>
+                        <div class="clear"> </div>
+                        
+                        <div class="login_in2" style='text-align:center; font-weight:bold;'><div> Permanent  Address </div></div>
+                        <div class="login_in2"><input name="permanentAddressHNo" type="text"  placeholder='H.No:*' class='register'> </div>
+                        <div class="login_in2 reg" id='permanentAddressHNo' ><label >This field is required.</label></div>
+                        <div class="clear"> </div>
+                        
+                        <div class="login_in2"><input name="permanentAddressVillage" type="text"  placeholder='Village:*' class='register'> </div>
+                        <div class="login_in2 reg" id='permanentAddressVillage' ><label >This field is required.</label></div>
+                        <div class="clear"> </div>
+                        <div class="login_in2"><input name="permanentAddressMandal" type="text"  placeholder='Mandal*' class='register'> </div>
+                        <div class="login_in2 reg" id='permanentAddressMandal' ><label >This field is required.</label></div>
+                        <div class="clear"> </div>
+                        <div class="login_in2"><input name="permanentAddressDistrict" type="text"  placeholder='Disrtict*' class='register'> </div>
+                        <div class="login_in2 reg" id='permanentAddressDistrict' ><label >This field is required.</label></div>
+                        <div class="clear"> </div>
+                        <div class="login_in2"><input name="permanentAddressPincode" type="text"  placeholder='Pincode*' class='register' maxlength="5"> </div>
+                        <div class="login_in2 reg" id='permanentAddressPincode' ><label >This field is required.</label></div>
+                        <div class="clear"> </div>
+                        
+	                    <div class="clear"> </div>
+	                    <div align='center'><a href="#" data-role="button"  data-inline="true" data-theme="b" style="width: 150px;background:red; color: #FFFFFF" class='regi_btn' id="submit">SUBMIT</a></div>
+						<div class="login_in2 login_font2" style='display: none' id='success'>Registered Successfully,&nbsp;</div>
+                    </form>
+                </div>
+			</div>  
+			<div data-role="panel" id="leftpanel3" data-position-fixed="true" data-swipe-close="true" data-rel="close" data-position="left" data-display="overlay" data-dismissible="true" data-theme="a">
+				<div id="menu">
+				 <ul>
+					<li style="font-size:14px;padding-left:10px;padding-bottom: 35px;padding-top:5px;border-bottom:solid 1px #fff; ">
+						<div style="width:60px;margin: 20px 0px 0px 90px;"><img style="border-radius:50px;" width="90" height="90" src="images/icons/logo.png"></div>
+					</li>   
+					<li class="active"><a href="#" data-ajax='false'> <span class="img"><img src="images/icons/newlisting.png" alt="Gallery"></span> <span class="img-txt">Census Form</span> </a> </li>
+					<li><a href="donations.html" data-ajax='false'><span class="img"><img src="images/icons/mykeepnpik.png" alt="Videos"></span> <span class="img-txt">Donations</span> </a> </li>
+					<li><a href="admission.html" data-ajax='false'> <span class="img"><img src="images/icons/newlisting.png" alt="Audios"></span> <span class="img-txt">Hostels Admission</span> </a> </li>
+					<li><a href="membership.html" data-ajax='false'> <span class="img"><img src="images/icons/newlisting.png" alt="Geeta"></span> <span class="img-txt">AIVA Membership</span> </a> </li>
+					<li><a href="marriageBeuro.html" data-ajax='false' > <span class="img"><img src="images/icons/newlisting.png" alt="Gallery"></span> <span class="img-txt">Marriage Beuro</span> </a> </li>
+					<li><a href="upload.html" data-ajax='false' > <span class="img"><img src="images/icons/newlisting.png" alt="Gallery"></span> <span class="img-txt">Upload</span> </a> </li>
+				  </ul>
+				</div>
+			</div>
+	    </div>  
+    </body>
+</html>
